@@ -1,0 +1,38 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/config.txt
+** Generation date: 2020-02-13T08:48:19
+*************************************************************$
+*** Causality Error (ERR_400): Causality error
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 401, character 15
+  at path microhondas/Microondas:Running:making:Cooking:finished=
+ the definition of shared flow finished depends on the state of automaton making
+ via the control context ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 335, character 0
+  at path microhondas/Microondas:Running:making:Cooking:
+ the state of automaton making depends on the strong guards of state Cooking ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 335, character 0
+  at path microhondas/Microondas:Running:making:Cooking:
+ the strong guards of state Cooking depend on the state of automaton
+ Microondas ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 314, character 0
+  at path microhondas/Microondas:Running:
+ the state of automaton Microondas depends on the strong guards of state
+ Running ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 314, character 0
+  at path microhondas/Microondas:Running:
+ the strong guards of state Running depend on flow finished ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 294, character 0
+  at path microhondas/finished/
+ the definition of flow finished depends on shared flow finished via a control
+ block ;
+  at file C:/Users/Granada/Documents/Scade proyectos/micro/Simulation/scade_model_without_unused.scade, line 294, character 0
+  at path microhondas/finished/
+ the definition of shared flow finished depends on shared flow finished via a
+ control block ;
+No warning was found
+1 error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg.log
+** Generation date: 2020-02-13T08:48:19
+*************************************************************$

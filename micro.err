@@ -1,0 +1,31 @@
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 281, character 0
+  at path microhondas/Input2/
+ The input variable Input2 is never used
+*** Causality Error (ERR_400): Causality error
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 405, character 15
+  at path microhondas/Microondas:Running:making:Cooking:finished=
+ the definition of shared flow finished depends on the state of automaton making
+ via the control context ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 339, character 0
+  at path microhondas/Microondas:Running:making:Cooking:
+ the state of automaton making depends on the strong guards of state Cooking ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 339, character 0
+  at path microhondas/Microondas:Running:making:Cooking:
+ the strong guards of state Cooking depend on the state of automaton
+ Microondas ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 318, character 0
+  at path microhondas/Microondas:Running:
+ the state of automaton Microondas depends on the strong guards of state
+ Running ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 318, character 0
+  at path microhondas/Microondas:Running:
+ the strong guards of state Running depend on flow finished ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 298, character 0
+  at path microhondas/finished/
+ the definition of flow finished depends on shared flow finished via a control
+ block ;
+  at file C:\Users\Granada\AppData\Local\Temp\ScadeChecker\1332\checker_file.scade, line 298, character 0
+  at path microhondas/finished/
+ the definition of shared flow finished depends on shared flow finished via a
+ control block ;
